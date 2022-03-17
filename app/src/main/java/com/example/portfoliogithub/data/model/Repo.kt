@@ -1,5 +1,7 @@
 package com.example.portfoliogithub.data.model
 
+import com.google.gson.annotations.SerializedName
+
 data class Repo (
     val id: Long,
     val nodeID: String,
@@ -7,6 +9,7 @@ data class Repo (
     val fullName: String,
     val private: Boolean,
     val owner: Owner,
+    @SerializedName("html_url")
     val htmlURL: String,
     val description: String,
     val fork: Boolean,
@@ -56,6 +59,7 @@ data class Repo (
     val svnURL: String,
     val homepage: Any? = null,
     val size: Long,
+    @SerializedName("stargazers_count")
     val stargazersCount: Long,
     val watchersCount: Long,
     val language: String,
