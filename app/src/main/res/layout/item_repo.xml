@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/grey_card"
     app:cardCornerRadius="@dimen/layout_half_padding"
     app:cardElevation="@dimen/layout_half_padding"
     app:cardUseCompatPadding="true">
@@ -49,7 +50,7 @@
             android:id="@+id/chip_star"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            app:chipBackgroundColor="@color/white"
+            app:chipBackgroundColor="@color/grey_card"
             app:chipIcon="@drawable/ic_stars"
             app:chipIconTint="#FFBF00"
             app:layout_constraintStart_toStartOf="@id/tv_repo_name"
@@ -61,7 +62,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            app:layout_constraintEnd_toEndOf="@id/tv_repo_name"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/chip_star"
             tools:text="@sample/repository.json/data/language" />
 
