@@ -1,5 +1,6 @@
 package com.example.portfoliogithub.data.services
 
+import com.example.portfoliogithub.data.model.Repo
 import retrofit2.http.GET
 import retrofit2.http.Path
 
