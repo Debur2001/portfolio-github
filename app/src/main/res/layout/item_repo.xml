@@ -57,7 +57,7 @@
             app:chipIcon="@drawable/ic_stars"
             app:chipIconTint="#FFBF00"
             app:layout_constraintStart_toStartOf="@id/tv_repo_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_repo_description"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_owner"
             tools:text="@sample/repository.json/data/stargazers_count" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -66,8 +66,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/layout_half_padding"
             android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/chip_star"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_owner"
             tools:text="@sample/repository.json/data/language" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
